@@ -1,8 +1,5 @@
 # Spring Hibernate Configuration
 
-In this repository, you can explore the branches to find out 
-different ways of configuring hibernate with spring
-
 ## Spring 5.x, Hibernate 5.x and JUnit 5
 
 ### Dependencies
@@ -12,7 +9,7 @@ different ways of configuring hibernate with spring
   - Provide classes to support JUnit 5. (SpringExtension.class and @ContextConfiguration) 
    
 - org.junit.jupiter:junit-jupiter-api:5.6.2
-- org.junit.jupiterjunit-jupiter-engine:5.6.2
+- org.junit.jupiter:junit-jupiter-engine:5.6.2
 - org.springframework.data:spring-data-jpa:2.3.0.RELEASE
 - org.hibernate:hibernate-core:5.4.17.Final
 - com.h2database:h2:1.4.200
