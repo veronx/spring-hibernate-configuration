@@ -6,16 +6,15 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.ContextConfiguration;
+import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import javax.persistence.EntityManager;
 
-@ExtendWith(SpringExtension.class)
-@ContextConfiguration(classes = { JpaConfig.class })
-public class JpaTest {
+@ExtendWith({SpringExtension.class})
+@DataJpaTest
+public class SpringHibernateConfigurationTest {
 
     @Autowired
     private EntityManager entityManager;
@@ -24,7 +23,6 @@ public class JpaTest {
     private TaskRepository taskRepository;
 
     @Test
-    @Transactional
     public void testEntityManager() {
         entityManager.persist(new Task("Do the dishes"));
         entityManager.persist(new Task("Study JPA"));
