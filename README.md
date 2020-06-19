@@ -7,7 +7,6 @@
 - org.springframework.boot:spring-boot-starter-parent:2.3.1.RELEASE
 - org.springframework.boot:spring-boot-starter-data-jpa
 - org.springframework.boot:spring-boot-starter-test
-- org.springframework.boot:spring-boot-maven-plugin
 - com.h2database
 
 ### Configuration
